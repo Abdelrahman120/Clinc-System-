@@ -1,0 +1,214 @@
+
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start Components */
+  .special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+  }
+  @media (max-width: 767px) {
+    .special-heading {
+      font-size: 60px;
+    }
+    .special-heading + p {
+      margin-top: -20px;
+    }
+  }
+  /* End Components */
+  /* Start Header */
+  .header {
+    padding: 30px;
+    background-color: #cfeff8;
+    display: flex;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+  }
+  .header .logo {
+    width: 90px;
+  }
+  .header .links {
+    position: relative;
+  }
+  .header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+  }
+  .header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+  }
+  .header .links .icon span:first-child {
+    width: 100%;
+  }
+  .header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+  }
+  .header .links .icon span:last-child {
+    width: 100%;
+  }
+  .header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+  }
+  .header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  .header .links:hover ul {
+    display: block;
+  }
+  .header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+  }
+  .header .links ul li a:hover {
+    padding-left: 25px;
+  }
+  .header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+  }
+  /* End Header */
+  
+
+.pay{
+    width: 450px;
+    min-height: 350px;
+    border: 0px solid ;
+    border-radius: 5px ;
+    position:relative;
+    top: 110px;
+    left: 500px;
+    text-align: left;
+    padding: 40px;
+    background-color:#e4f5fa;
+    /*hsla(194, 23%, 89%, 0.925);*/
+    bottom: 110px;
+}
+.pay:hover{
+    box-shadow: 3px 3px 50px #26677a;
+}
+h2{
+    text-align: center;
+    letter-spacing: 1px;
+    font-style:oblique;
+}
+.b{
+    position: relative;
+    margin: 15px;
+}
+.b input{
+    width: 100%;
+    padding: 10px 0;
+    box-sizing:border-box;
+    font-size: 16px;
+    border:none;
+    padding-left: 30px;
+    border-bottom: 3px solid;
+    border-radius: 5px;
+    background: none;
+    font-style:oblique;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button{
+   /* color: #0e1618;*/
+    /*box-shadow: #1b64bc;*/
+    position:relative;
+   /* background-color: #10aedf;*/
+    font-style:oblique;
+    outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: rgb(83, 127, 148);
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  text-decoration: none;
+}
+

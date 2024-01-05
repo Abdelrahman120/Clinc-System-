@@ -1,0 +1,31 @@
+/* page content */
+.page_content .content_item{
+    background-color: #fff;
+    position: relative;
+    padding:30px 20px 30px 100px;
+    box-shadow: 0 5px 10px 0px #f4f4f4
+}
+.page_content .content_item i{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 52px;
+}
+.page_content .content_item i.fa-users{
+    color: blue;
+}
+.page_content .content_item i.fa-user-md{
+    color: orangered;
+}
+.page_content .content_item i.fa-hospital-user{
+    color: orange;
+}
+.page_content .content_item .item_num{
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.page_content .content_item .item_title{
+    font-size: 14px;
+    text-transform: capitalize;
+}
